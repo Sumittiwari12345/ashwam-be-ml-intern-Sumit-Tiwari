@@ -1,0 +1,5 @@
+{"primary_language": "en", "script": "latin", "confidence": 0.9, "evidence": {"latin_ratio": 1.0, "devanagari_ratio": 0.0, "hi_word_hits": 0, "en_word_hits": 8, "token_count": 8}, "id": "t_001"}
+{"primary_language": "hi", "script": "devanagari", "confidence": 0.9, "evidence": {"latin_ratio": 0.0, "devanagari_ratio": 1.0, "hi_word_hits": 5, "en_word_hits": 0, "token_count": 5}, "id": "t_002"}
+{"primary_language": "hinglish", "script": "latin", "confidence": 0.83, "evidence": {"latin_ratio": 1.0, "devanagari_ratio": 0.0, "hi_word_hits": 3, "en_word_hits": 1, "token_count": 4}, "id": "t_003"}
+{"primary_language": "mixed", "script": "latin", "confidence": 0.8, "evidence": {"latin_ratio": 0.92, "devanagari_ratio": 0.08, "hi_word_hits": 3, "en_word_hits": 3, "token_count": 6}, "id": "t_004"}
+{"primary_language": "unknown", "script": "other", "confidence": 0.1, "evidence": {"latin_ratio": 0.0, "devanagari_ratio": 0.0, "hi_word_hits": 0, "en_word_hits": 0, "token_count": 0}, "id": "t_005"}
