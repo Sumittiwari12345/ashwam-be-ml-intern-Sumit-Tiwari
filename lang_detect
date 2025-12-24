@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from lang_detect import main
+from language_detection.cli import main
 
 
 if __name__ == "__main__":

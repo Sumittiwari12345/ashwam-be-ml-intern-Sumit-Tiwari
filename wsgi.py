@@ -1,2 +1,1 @@
-from app import app
-
+from language_detection.api import app

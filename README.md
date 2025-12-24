@@ -21,6 +21,23 @@ Confidence is a 0-1 score derived from:
 - coverage of word hits relative to token count,
 - penalties for short or noisy inputs.
 
+## Architecture
+```
+CLI (JSONL) --------> language_detection.cli -----> language_detection.detector -----> lang.jsonl
+HTTP (JSON) --------> language_detection.api -----> language_detection.detector -----> JSON response
+```
+
+## Project layout
+```
+language_detection/
+  detector.py   Core rules + confidence scoring
+  cli.py        JSONL batch pipeline
+  api.py        Flask request handlers
+app.py          Thin server runner for local use
+lang_detect.py  CLI wrapper (kept for compatibility)
+wsgi.py         WSGI entrypoint for production
+```
+
 ## CLI
 ```bash
 lang_detect --in texts.jsonl --out lang.jsonl
@@ -29,6 +46,11 @@ lang_detect --in texts.jsonl --out lang.jsonl
 On Windows (or if the script is not executable):
 ```bash
 python lang_detect.py --in texts.jsonl --out lang.jsonl
+```
+
+Or as a module:
+```bash
+python -m language_detection.cli --in texts.jsonl --out lang.jsonl
 ```
 
 ## Flask server

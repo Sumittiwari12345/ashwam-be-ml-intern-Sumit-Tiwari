@@ -1,6 +1,6 @@
 import unittest
 
-from lang_detect import analyze_text
+from language_detection import analyze_text
 
 
 class TestLangDetect(unittest.TestCase):
